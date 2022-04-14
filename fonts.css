@@ -1,0 +1,42 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ] */
+
+
+  
+  @font-face {
+    font-family: Poppins-Light;
+    src: url('assets/fonts/Poppins/Poppins-Medium.ttf'); 
+  }
+
+  *{
+    font-family: Poppins-Light;
+  }
+  
+
+
+  .about-us{
+
+    font-family: Poppins-Light;
+    line-height: 1.7857;
+  }
+
+  .see{
+    font-family: Poppins-Light;
+    line-height: 1.5;
+     font-weight: 400;
+  }
+  .welcome-school{
+
+    font-family: Poppins-Regular;
+    line-height: 1.5;
+  } 
+
+  .home-about{
+    font-family: Poppins-Light;
+    line-height: 1.5;
+    /* font-weight: 500; */
+  }
+  .testing{
+    font-family: Poppins-Light;
+  }
+

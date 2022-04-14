@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Sarabun&family=Ubuntu+Mono&display=swap");
+
+/* font-family: 'Patua One', cursive;
+
+font-family: 'Sarabun', sans-serif;
+
+font-family: 'Ubuntu Mono', monospace; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+body,
+html {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.container-fluid .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+}
+
+.container-fluid a {
+  text-decoration: none !important;
+}
+
+.container-fluid h1 {
+  color: #000;
+  font-weight: bold;
+  font-family: "Sarabun", sans-serif;
+}
+
+header{
+  height: 80vh;
+  width: 100%;
+  background: url('assets/homepage.jpg') center no-repeat;
+  background-size: cover;
+}
+.navbar-toggler {
+  color: #0a0136;
+  display: flex;
+  padding: 0 !important;
+  /* background: #0a0136 !important; */
+}
+
+.bi-list {
+  font-size: 2rem;
+  color: #0a0136;
+}
+
+header nav {
+  width: 500px !important;
+  transform: skew(20deg);
+  position: relative;
+  background: #fff;
+  border-top: 2px solid #0a0136;
+}
+
+header nav a {
+  transform: skew(-20deg);
+  margin: 0.5rem 1rem !important;
+  text-align: center;
+  /* background: #0a0136; */
+  /* font-family: "Sarabun", sans-serif; */
+  transition: 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  transform: skew(0deg);
+}
+
+header nav .active a {
+  color: #0a0136 !important;
+}
+
+.row {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: bolder;
+  color: #000000;
+}
+
+#welcome h1 {
+  font-weight: bold;
+  font-family: "Sarabun", sans-serif;
+  color: #000000;
+}
+
+#welcome p {
+  /* font-weight: 200; */
+  font-size: 18px;
+}
+
+#welcome .btn,
+#about .btn {
+  color: #fff;
+  background: #0a0136;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+#welcome .btn:hover,
+#about .btn:hover {
+  background: #d0c8f3;
+  color: #0a0136;
+}
+
+#programs .row div {
+  height: 200px;
+  box-shadow: 0 0.2rem 1rem #b1acac;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0a0136;
+}
+#programs .icon{
+  color: #0a0136;
+  padding: 5px 0;
+  font-size: 2rem;
+  transition: .3s ease-in-out;
+}
+#programs .icon:hover{
+  color: #504b4b;
+  transform: scale(1.3);
+}
+
+
+
+.card-img-top {
+  transition: 0.3s ease-in-out;
+}
+#scope .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scope .row {
+  margin: 1rem 0;
+}
+.wrap .text {
+  /* font-weight: bold; */
+  /* font-family: "Patua One", cursive; */
+  text-align: left;
+  padding: 0 10px;
+}
+#scope .col-md-3:hover .wrap .text {
+  color: #0a0136 !important;
+}
+
+#scope .icon {
+  padding: 1.5rem;
+  border-radius: 50%;
+  color: #0a0136;
+  font-size: 1.7rem;
+  transition: 0.3s ease-in-out;
+}
+#scope .wrap:hover .icon {
+  background: #0a0136;
+  color: #fff;
+}
+
+#gallery .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+#gallery .card {
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery .card a:hover .card-body {
+  background: #fff;
+}
+
+#gallery .card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 5px;
+  background: #ffffffbb;
+  padding: 5px !important;
+  transition: 0.3s ease-in-out;
+}
+
+.card-title {
+  color: #0a0136;
+  text-align: center;
+  font-size: 12px !important;
+  font-weight: 600;
+}
+
+.pagination li a {
+  color: #0a0136;
+}
+
+#testimonials .card {
+  width: 300px;
+}
+
+#testimonials .text {
+  padding: 5px;
+  width: 100%;
+  min-height: 300px;
+  box-shadow: 3px 0.3rem 0.5rem #b1acac;
+  position: relative;
+}
+
+#testimonials .text img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3.5rem;
+  transform: translate(-50%, -50%);
+}
+
+#testimonials .card-title {
+  font-size: 20px !important;
+}
+
+footer {
+  background: #0f0e13;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+footer nav li {
+  display: flex;
+  margin: auto;
+}
+
+footer nav a {
+  color: #b1acac;
+}
+
+footer h4 {
+  color: #fff;
+}
+
+footer .lead {
+  color: #b1acac;
+}
+
+@media (max-width: 576px) {
+  .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  header nav {
+    width: 100% !important;
+    transform: skew(0deg);
+  }
+
+  header nav .active a {
+    font-weight: bold;
+    transform: skew(0deg) !important;
+  }
+  #welcome h1 {
+    font-size: 2rem;
+  }
+  
+}
+@media (max-width: 992px) {
+  #scope .wrap {
+    justify-content: start;
+    align-items: center;
+  }
+  #scope .row {
+    margin: 0 !important;
+  }
+}

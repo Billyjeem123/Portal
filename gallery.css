@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Sarabun&family=Ubuntu+Mono&display=swap");
+
+/* font-family: 'Patua One', cursive;
+
+font-family: 'Sarabun', sans-serif;
+
+font-family: 'Ubuntu Mono', monospace; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #000;
+}
+
+body,
+html {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.container-fluid .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+}
+
+.container-fluid a {
+  text-decoration: none !important;
+}
+
+.container-fluid h1 {
+  color: #000;
+  font-weight: bold;
+  font-family: "Sarabun", sans-serif;
+}
+.text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-left: 3px solid #0a0136;
+}
+/*Slider*/
+.slider {
+  padding: 0.5rem 1rem;
+}
+
+.slider > div {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Navigation */
+.slider-nav {
+  padding: 1rem;
+  text-align: center;
+}
+
+.slider-nav > div {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.slider-nav > div img {
+  width: 80px;
+}
+
+.card-img-top {
+  transition: 0.3s ease-in-out;
+}
+
+#gallery .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+#gallery .card {
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery .card a:hover .card-body {
+  background: #fff;
+}
+
+#gallery .card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 5px;
+  background: #ffffffbb;
+  padding: 5px !important;
+  transition: 0.3s ease-in-out;
+}
+
+.card-title {
+  color: #0a0136;
+  text-align: center;
+  font-size: 12px !important;
+  font-weight: 600;
+}
+
+.pagination li a {
+  color: #0a0136;
+}
+
+footer {
+  background: #0f0e13;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+footer nav li {
+  display: flex;
+  margin: auto;
+}
+
+footer nav a {
+  color: #b1acac;
+}
+
+footer h4 {
+  color: #fff;
+}
+
+footer .lead {
+  color: #b1acac;
+}
+@media (max-width: 576px) {
+  .container-fluid h1 {
+    font-size: 2rem;
+  }
+  .text p {
+    font-size: 15px;
+  }
+}

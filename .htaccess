@@ -1,0 +1,11 @@
+RewriteEngine on
+
+
+RewriteRule ^(index)$ $1.php [NC,L]
+
+
+RewriteRule ^([a-zA-Z0-9-/]+).php/$ gallery.php?gallery=$1
+
+
+
+  
